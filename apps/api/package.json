@@ -1,0 +1,51 @@
+{
+  "name": "@cloudvault/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src/server.ts --format esm --sourcemap --clean --out-dir dist",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "seed": "tsx src/seed.ts"
+  },
+  "dependencies": {
+    "@cloudvault/config": "*",
+    "@cloudvault/security": "*",
+    "@cloudvault/shared": "*",
+    "@cloudvault/types": "*",
+    "@cloudvault/validation": "*",
+    "argon2": "^0.44.0",
+    "bullmq": "^5.58.5",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "file-type": "^21.0.0",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.7.0",
+    "jose": "^6.1.0",
+    "minio": "^8.0.5",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2",
+    "otplib": "^12.0.1",
+    "pino": "^9.9.0",
+    "pino-http": "^10.5.0",
+    "rate-limit-redis": "^4.2.1",
+    "socket.io": "^4.8.1",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/multer": "^2.0.0",
+    "@types/supertest": "^6.0.3",
+    "@types/swagger-ui-express": "^4.1.8",
+    "supertest": "^7.1.4"
+  }
+}

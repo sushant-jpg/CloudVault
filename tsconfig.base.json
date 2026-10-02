@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@cloudvault/types": ["./packages/types/src/index.ts"],
+      "@cloudvault/validation": ["./packages/validation/src/index.ts"],
+      "@cloudvault/config": ["./packages/config/src/index.ts"],
+      "@cloudvault/security": ["./packages/security/src/index.ts"],
+      "@cloudvault/shared": ["./packages/shared/src/index.ts"]
+    }
+  }
+}
